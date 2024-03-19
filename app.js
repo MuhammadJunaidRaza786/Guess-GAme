@@ -2,14 +2,12 @@ let targetNum = Math.floor(Math.random() * 10) + 1;
 
 let userInp = parseInt(prompt("Guess the number"));
 
-// if (userInp === targetNum) {
-//   alert("You won the Game");
-// }
-
-
-
 while (userInp !== targetNum) {
   targetNum = Math.floor(Math.random() * 10) + 1;
+
+  console.log(userInp);
+  console.log(targetNum);
+
   
   if (!userInp) {
     alert("Invalid Input")
@@ -20,8 +18,8 @@ while (userInp !== targetNum) {
     alert("You won the Game");
     break;
   }
-  console.log(userInp);
-  console.log(targetNum);
+
+  
 }
 
 
